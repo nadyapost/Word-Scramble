@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		1376821622474D6B00D0B256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1376821522474D6B00D0B256 /* AppDelegate.swift */; };
 		1376821822474D6B00D0B256 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1376821722474D6B00D0B256 /* ViewController.swift */; };
-		1376821B22474D6B00D0B256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1376821922474D6B00D0B256 /* Main.storyboard */; };
 		1376821D22474D6B00D0B256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1376821C22474D6B00D0B256 /* Assets.xcassets */; };
 		1376822022474D6B00D0B256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1376821E22474D6B00D0B256 /* LaunchScreen.storyboard */; };
 		1376822B22474D6B00D0B256 /* Word_ScrambleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1376822A22474D6B00D0B256 /* Word_ScrambleTests.swift */; };
+		1376823622474DB000D0B256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1376823522474DB000D0B256 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		1376821222474D6B00D0B256 /* Word Scramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Word Scramble.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1376821522474D6B00D0B256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1376821722474D6B00D0B256 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1376821A22474D6B00D0B256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1376821C22474D6B00D0B256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1376821F22474D6B00D0B256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1376822122474D6B00D0B256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1376822622474D6B00D0B256 /* Word ScrambleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Word ScrambleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1376822A22474D6B00D0B256 /* Word_ScrambleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word_ScrambleTests.swift; sourceTree = "<group>"; };
 		1376822C22474D6B00D0B256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1376823522474DB000D0B256 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 			children = (
 				1376821522474D6B00D0B256 /* AppDelegate.swift */,
 				1376821722474D6B00D0B256 /* ViewController.swift */,
-				1376821922474D6B00D0B256 /* Main.storyboard */,
+				1376823522474DB000D0B256 /* Main.storyboard */,
 				1376821C22474D6B00D0B256 /* Assets.xcassets */,
 				1376821E22474D6B00D0B256 /* LaunchScreen.storyboard */,
 				1376822122474D6B00D0B256 /* Info.plist */,
@@ -177,9 +177,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1376823622474DB000D0B256 /* Main.storyboard in Resources */,
 				1376822022474D6B00D0B256 /* LaunchScreen.storyboard in Resources */,
 				1376821D22474D6B00D0B256 /* Assets.xcassets in Resources */,
-				1376821B22474D6B00D0B256 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +221,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1376821922474D6B00D0B256 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1376821A22474D6B00D0B256 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1376821E22474D6B00D0B256 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
