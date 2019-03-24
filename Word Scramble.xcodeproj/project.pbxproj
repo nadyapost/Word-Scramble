@@ -13,6 +13,7 @@
 		1376822022474D6B00D0B256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1376821E22474D6B00D0B256 /* LaunchScreen.storyboard */; };
 		1376822B22474D6B00D0B256 /* Word_ScrambleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1376822A22474D6B00D0B256 /* Word_ScrambleTests.swift */; };
 		1376823622474DB000D0B256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1376823522474DB000D0B256 /* Main.storyboard */; };
+		13768238224786C800D0B256 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 13768237224786C800D0B256 /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		1376822A22474D6B00D0B256 /* Word_ScrambleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word_ScrambleTests.swift; sourceTree = "<group>"; };
 		1376822C22474D6B00D0B256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1376823522474DB000D0B256 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		13768237224786C800D0B256 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				1376821C22474D6B00D0B256 /* Assets.xcassets */,
 				1376821E22474D6B00D0B256 /* LaunchScreen.storyboard */,
 				1376822122474D6B00D0B256 /* Info.plist */,
+				13768237224786C800D0B256 /* start.txt */,
 			);
 			path = "Word Scramble";
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1376823622474DB000D0B256 /* Main.storyboard in Resources */,
+				13768238224786C800D0B256 /* start.txt in Resources */,
 				1376822022474D6B00D0B256 /* LaunchScreen.storyboard in Resources */,
 				1376821D22474D6B00D0B256 /* Assets.xcassets in Resources */,
 			);
