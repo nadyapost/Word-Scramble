@@ -66,20 +66,15 @@ class ViewController: UITableViewController {
           tableView.insertRows(at: [indexPath], with: .automatic)
           return
         } else {
-          errorTitle = "Word not recognised"
-          errorMessage = "You can't just make them up, you know!"
+          showErrorMessage(title: "Word not recognised", message: "You can't just make them up, you know!")
         }
       } else {
-        errorTitle = "Word used already"
-        errorMessage = "Be more original!"
+        showErrorMessage(title: "Word used already", message: "Be more original!")
       }
     } else {
-      errorTitle = "Word not possible"
-      errorMessage = "You can't spell that word from \(title!.lowercased())"
+      showErrorMessage(title: "Word not possible", message: "You can't spell that word from \(title!.lowercased())")
     }
-    let ac = UIAlertController(title: errorTitle, message: errorMessage, preferredStyle: .alert)
-    ac.addAction(UIAlertAction(title: "Ok", style: .default))
-    present(ac, animated: true)
+    
   }
   
   func isPosible(word: String) -> Bool {
@@ -99,13 +94,19 @@ class ViewController: UITableViewController {
     return !usedWords.contains(word)
   }
   func isReal(word: String) -> Bool {
+    if word.count <= 3 || word == title {
+      return false
+    }
     let checker = UITextChecker()
     let range = NSRange(location: 0, length: word.utf16.count)
     let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
-    
     return misspelledRange.location == NSNotFound
   }
   
-
+  func showErrorMessage(title: String, message: String) {
+    let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    ac.addAction(UIAlertAction(title: "Ok", style: .default))
+    present(ac, animated: true)
+  }
 }
 
