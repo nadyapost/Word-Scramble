@@ -19,19 +19,21 @@ class ViewController: UITableViewController {
     if let startWordsListURL = Bundle.main.url(forResource: "start", withExtension: "txt") {
       if let startWords = try? String(contentsOf: startWordsListURL) {
         allWords = startWords.components(separatedBy: "\n")
-        
       }
+      
+      navigationItem.leftBarButtonItem  = UIBarButtonItem(title: "New word", style: .plain, target: self, action: #selector(startGame))
     }
     if allWords.isEmpty {
       allWords = ["silkworm"]
     }
     startGame()
   }
-  func startGame() {
+  @objc func startGame() {
     title = allWords.randomElement()
     usedWords.removeAll(keepingCapacity: true)
     tableView.reloadData()
   }
+  
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return usedWords.count
@@ -44,7 +46,7 @@ class ViewController: UITableViewController {
   @objc func promptAnswer() {
     let ac = UIAlertController(title: "Enter answer", message: nil, preferredStyle: .alert)
     ac.addTextField()
-    let submitAction = UIAlertAction(title: "Submit", style: .default) { [weak self, weak ac] action in
+    let submitAction = UIAlertAction(title: "Submit", style: .default) { [weak self, weak ac] _ in
       guard let answer = ac?.textFields?[0].text else {return}
       self?.submit(answer)
     }
@@ -54,8 +56,6 @@ class ViewController: UITableViewController {
   
   func submit(_ answer: String) {
     let lowerAnswer = answer.lowercased()
-    let errorTitle: String
-    let errorMessage: String
     
     if isPosible(word: lowerAnswer) {
       if isOriginal(word: lowerAnswer) {
